@@ -1,0 +1,46 @@
+body,
+button {
+  font-family: monospace;
+}
+
+body, p {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+button {
+  margin: 32px 0;
+  padding: 8px;
+  border: 2px solid black;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 128px;
+  background: white;
+}
+
+.loaderIcon {
+  animation: spin linear infinite .25s;
+}
+
+@keyframes spin {
+  from { transform:rotate(0deg) }
+  to { transform:rotate(360deg) }
+}
